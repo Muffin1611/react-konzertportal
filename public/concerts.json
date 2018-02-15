@@ -1,0 +1,28 @@
+{
+  "concerts": [
+    {
+      "id": "1",
+      "name": "Linkin Park",
+      "image": "https://devitems.com/preview/furnish/img/product/1.jpg",
+      "price": "$39"
+    },
+    {
+      "id": "2",
+      "name": "Green Day",
+      "image": "https://devitems.com/preview/furnish/img/product/2.jpg",
+      "price": "$319"
+    },
+    {
+      "id": "3",
+      "name": "Billy Talent",
+      "image": "https://devitems.com/preview/furnish/img/product/3.jpg",
+      "price": "$239"
+    },
+    {
+      "id": "4",
+      "name": "Whatever",
+      "image": "https://devitems.com/preview/furnish/img/product/4.jpg",
+      "price": "$239"
+    }
+  ]
+}
