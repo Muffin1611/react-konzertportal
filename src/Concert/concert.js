@@ -7,6 +7,10 @@ import './concert.css';
 var axios = require('axios');
 
 export class Concert extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = this.getInitialState();
+    }
 
     getInitialState() {
     return {
