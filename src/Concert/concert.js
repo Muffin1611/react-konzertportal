@@ -36,14 +36,11 @@ export class Concert extends React.Component {
     render(){
         return (
             <div>
-                <h1>Concerts!</h1>
                 {this.state.concerts.map(function(concert) {
                     return (
                         <div key={concert.id} className="concert">
                             <a href="placeholder.asp">
-                                {concert.name}
-                                has a price of
-                                {concert.price}
+                                {concert.name} has a price of {concert.price}
                             </a>
                         </div>
                     );

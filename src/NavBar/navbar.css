@@ -5,6 +5,7 @@
     color: #f1f1f1;
 }
 
+
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
     position: fixed;
