@@ -33,18 +33,28 @@ export class Concert extends React.Component {
     this.serverRequest.abort();
 }
 
+
     render(){
         return (
             <div>
+                <h2>Konzerte</h2>
+            <div className="wrapper">
                 {this.state.concerts.map(function(concert) {
                     return (
-                        <div key={concert.id} className="concert">
-                            <a href="placeholder.asp">
-                                {concert.name} has a price of {concert.price}
-                            </a>
+                        <div className="item">
+                        <a href="#" key={concert.id}>
+                            <h4>
+                                {concert.name}
+                            </h4>
+                            <p id="eventList">
+                                {concert.events[0]}<br/>
+                                {concert.events[1]}
+                            </p>
+                        </a>
                         </div>
                     );
                 })}
+            </div>
             </div>
         )
 
