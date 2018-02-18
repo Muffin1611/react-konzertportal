@@ -1,29 +1,16 @@
-h2 {
-    margin-left: 24.5pc;
+.container {
+    padding: 80px 120px;
 }
 
-.wrapper {
-    display: grid;
-    grid-gap: 1pc 1pc;
-    grid-template-columns: 12pc 12pc 12pc 12pc;
-    grid-template-rows: 10pc 10pc 10pc 10pc;
-    padding: 30px;
-    align-content: center;
-}
-
-.item {
-    background-color: white;
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.item a {
-    color: black;
+a.concertItem {
     text-decoration: none;
+    color: black;
 }
 
-.item:hover {
-    background-color:lightgrey;
+.concertImg {
+    border: 10px solid transparent;
+}
+
+.concertImg:hover {
+    border-color: #f1f1f1;
 }

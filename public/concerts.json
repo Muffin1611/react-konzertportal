@@ -39,6 +39,11 @@
       "id": "8",
       "name": "RandomBand5",
       "events": ["12.12.", "21.12."]
+    },
+    {
+      "id": "9",
+      "name": "RandomBand6",
+      "events": ["11.11.", "21.11."]
     }
   ]
 }

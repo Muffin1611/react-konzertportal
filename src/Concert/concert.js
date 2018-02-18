@@ -36,25 +36,27 @@ export class Concert extends React.Component {
 
     render(){
         return (
-            <div>
+            <div className="container text-center">
                 <h2>Konzerte</h2>
-            <div className="wrapper">
+                <div class="row">
                 {this.state.concerts.map(function(concert) {
                     return (
-                        <div className="item">
-                        <a href="#" key={concert.id}>
-                            <h4>
+                            <div class="col-sm-4">
+                        <a className="concertItem" href="#" key={concert.id}>
+                            <p><strong>
                                 {concert.name}
-                            </h4>
-                            <p id="eventList">
-                                {concert.events[0]}<br/>
-                                {concert.events[1]}
+                            </strong><br/>
                             </p>
+                            <img class="concertImg" src="https://www.w3schools.com/bootstrap/bandmember.jpg" alt="Random Name" width="150" height="150"></img>
                         </a>
-                        </div>
+                                <p>
+                                    {concert.events[0]}<br/>
+                                    {concert.events[1]}
+                                </p>
+                            </div>
                     );
                 })}
-            </div>
+                </div>
             </div>
         )
 
