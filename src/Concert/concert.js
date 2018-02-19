@@ -47,7 +47,7 @@ export class Concert extends React.Component {
                                 {concert.name}
                             </strong><br/>
                             </p>
-                            <img class="concertImg" src="https://www.w3schools.com/bootstrap/bandmember.jpg" alt="Random Name" width="150" height="150"></img>
+                            <img class="concertImg" src="bandmember.jpg" alt="Random Name" width="150" height="150"></img>
                         </a>
                                 <p>
                                     {concert.events[0]}<br/>
