@@ -7,35 +7,38 @@ import './navbar.css';
 
 export class NavBar extends React.Component {
 
-
-    componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-}
-
-    componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
-}
-
-    handleScroll = (event) => {
-        var header = document.getElementById("myHeader");
-        var sticky = header.offsetTop;
-        if (window.pageYOffset >= sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-    }
-
     render() {
         return (
-            <div class="header" id="myHeader">
-                <ul>
-                    <li><a href="default.asp">Home</a></li>
-                    <li class="rightAligned"><a href="placeholder.asp">Warenkorb</a></li>
-                    <li class="rightAligned"><a href="placeholder.asp">Anmelden</a></li>
-                    <li class="rightAligned"><input type="text" placeholder="Search.."></input></li>
-                </ul>
-            </div>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Logo</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#home">HOME</a></li>
+                            <li><a href="#login">ANMELDEN</a></li>
+                            <li><a href="#contact">KONTAKT</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">MEHR
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Merchandise</a></li>
+                                    <li><a href="#">Extras</a></li>
+                                    <li><a href="#">Media</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         );
 
 
