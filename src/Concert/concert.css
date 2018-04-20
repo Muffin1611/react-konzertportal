@@ -1,5 +1,9 @@
 .container {
-    padding: 80px 120px;
+    margin-top: 6em;
+    margin-bottom: 6em;
+    padding: 40px 120px;
+    background: lightgrey;
+    border-radius: 24px;
 }
 
 a.concertItem {
@@ -12,5 +16,5 @@ a.concertItem {
 }
 
 .concertImg:hover {
-    border-color: #f1f1f1;
+    border-color: darkgrey;
 }

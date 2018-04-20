@@ -37,7 +37,7 @@ export class Concert extends React.Component {
     render(){
         return (
             <div className="container text-center">
-                <h2>Konzerte</h2>
+                <h2>Konzerte</h2><br/><br/><br/>
                 <div class="row">
                 {this.state.concerts.map(function(concert) {
                     return (
